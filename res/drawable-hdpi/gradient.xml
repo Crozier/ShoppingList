@@ -11,7 +11,7 @@
     <!-- Gradient Bg for listrow -->
     <gradient
         android:angle="270"
-        android:endColor="#2f6699"
-        android:startColor="#449def" />
+        android:endColor="#6a5acd"
+        android:startColor="#483d8b" />
 
 </shape>

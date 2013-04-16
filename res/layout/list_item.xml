@@ -9,13 +9,15 @@
 	    android:layout_height="wrap_content"
 	    android:focusable="false">
 
-	    <TextView
+	    <net.gautampulla.shoppinglist.ScriptTextView
 	        android:id="@+id/item_name_textView"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="0.90"
+	        android:paddingLeft="10dp"
 	        android:text="@string/item_name_text"
-	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:fontFamily="sans-serif"
+	        android:textSize="55sp"
 	        android:focusable="false"/>
 
 	    <CheckBox
@@ -25,11 +27,12 @@
 	        android:focusable="false"/>
 	</LinearLayout>
 
-	<TextView
+	<net.gautampulla.shoppinglist.ScriptTextView
 		android:id="@+id/item_notes_textView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="@string/notes_for_item_text"
-		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="35sp"
+		android:paddingLeft="10dp"
 		android:focusable="false"/>
 </LinearLayout>

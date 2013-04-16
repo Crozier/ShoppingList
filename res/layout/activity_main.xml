@@ -9,7 +9,8 @@
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6" >
+        android:layout_weight="6"
+        android:background="#fafad2">
     </ListView>
 
     <LinearLayout
@@ -18,47 +19,21 @@
         android:layout_weight="1" >
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/gradient"
-            android:fontFamily="sans-serif"
+            style="@style/ShoppingListButton"
             android:onClick="newItem"
-            android:text="@string/button_new"
-            android:textColor="#ffffff"
-            android:shadowColor="#7F000000"
-            android:shadowDx="3"
-            android:shadowDy="3"
-            android:shadowRadius="1.5"
-            android:textStyle="bold" />
+            android:text="@string/button_new" />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/gradient"
-            android:fontFamily="sans-serif"
             android:onClick="onHideChecked"
-            android:shadowColor="#000000"
             android:text="@string/button_hide_checked"
-            android:textColor="#ffffff"
             android:textScaleX="0.7"
-            android:textStyle="bold" />
+            style="@style/ShoppingListButton" />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/gradient"
-            android:fontFamily="sans-serif"
             android:onClick="onDropDb"
-            android:shadowColor="#000000"
             android:text="@string/drop_button_text"
-            android:textColor="#ffffff"
-            android:textStyle="bold" />
+            style="@style/ShoppingListButton"/>
+
     </LinearLayout>
 
 </LinearLayout>
