@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+//
+// Item-detail page
+// Launched when we click on an item. Allows editing fields of an item
+//
 public class ItemDetailActivity extends Activity {
 	public static final String ActivityModeProperty = "Type";
 	public static final int ActivityMode_NewItem = 0;
@@ -16,10 +20,22 @@ public class ItemDetailActivity extends Activity {
 	
 	public static final String NameProperty = "Name";
 	
+	// The item's name - and editable field
 	private EditText _name;
+	
+	// Extra notes about the item - an editable field
 	private EditText _notes;
+	
+	// The name that is displayed
 	private String _nameText;
+	
+	// Whether the item is checked (i.e. whether it has been purchased)
 	private Boolean _ischecked;
+	
+	// The mode tells us whether or not this is a new or an existing item
+	// For new items - when we close this activity we need to create a new
+	// row in SQL. For existing items, when we close this activity we need
+	// to update the row in SQL.
 	private int _mode;
 	
 	@TargetApi(11)
